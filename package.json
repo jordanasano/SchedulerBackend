@@ -1,9 +1,9 @@
 {
   "name": "schedulerbackend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,13 @@
     "graphql": "^16.11.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanasano/SchedulerBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jordanasano/SchedulerBackend/issues"
+  },
+  "homepage": "https://github.com/jordanasano/SchedulerBackend#readme"
 }
