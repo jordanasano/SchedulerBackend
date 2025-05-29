@@ -32,6 +32,8 @@
     "url": "https://github.com/jordanasano/SchedulerBackend/issues"
   },
   "homepage": "https://github.com/jordanasano/SchedulerBackend#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.14"
+  },
   "type": "commonjs"
 }
