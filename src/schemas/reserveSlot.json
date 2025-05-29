@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://our.company.com/companyNew.schema.json",
+  "type": "object",
+  "properties": {
+    "reserveSlot": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "reserveSlot"
+  ]
+}

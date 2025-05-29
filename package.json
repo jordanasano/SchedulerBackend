@@ -1,9 +1,18 @@
 {
   "name": "schedulerbackend",
   "version": "1.0.0",
-  "main": "app.ts",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "start": "npm run build && node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "test": "jest -i"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "config.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -11,9 +20,9 @@
   "dependencies": {
     "apollo-server-express": "^3.13.0",
     "express": "^5.1.0",
-    "graphql": "^16.11.0"
+    "graphql": "^16.11.0",
+    "jsonschema": "^1.5.0"
   },
-  "devDependencies": {},
   "description": "",
   "repository": {
     "type": "git",
@@ -22,5 +31,7 @@
   "bugs": {
     "url": "https://github.com/jordanasano/SchedulerBackend/issues"
   },
-  "homepage": "https://github.com/jordanasano/SchedulerBackend#readme"
+  "homepage": "https://github.com/jordanasano/SchedulerBackend#readme",
+  "devDependencies": {},
+  "type": "commonjs"
 }
